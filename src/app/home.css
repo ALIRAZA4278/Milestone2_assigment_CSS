@@ -1,0 +1,77 @@
+/* General Container */
+.home-page-container {
+    position: relative;
+    height: 100vh;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: sans-serif;
+  }
+  
+  /* Video Background */
+  .background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+    z-index: 0;
+  }
+  
+  /* Overlay on Top of Video */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+  }
+  
+  /* Content (Text Section) */
+  .content {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  
+  /* Subheading Text */
+  .subheading {
+    font-size: 1.125rem;  /* Large font size for smaller screens */
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+  }
+  
+  /* Main Heading Text */
+  .main-heading {
+    font-size: 3rem;  /* Default font size for smaller screens */
+    font-weight: 800;
+    color: white;
+    line-height: 1.1;
+    margin-top: 0.5rem;
+  }
+  
+  /* Media Query for larger screens */
+  @media (min-width: 768px) {
+    .subheading {
+      font-size: 2.5rem;  /* For medium screens (tablets) */
+    }
+  
+    .main-heading {
+      font-size: 6rem;  /* Larger font size for medium screens (tablets) */
+    }
+  }
+  
